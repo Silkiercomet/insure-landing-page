@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+:root{
+    --grayblue:hsl(216, 30%, 68%);
+    --darkvio:hsl(256, 26%, 20%);
+    --verydarkvio:hsl(270, 9%, 17%);
+    --darkgrayvio:hsl(273, 4%, 51%);
+    --lightgray:hsl(0, 0%, 98%);
+
+}
+html{
+    box-sizing:border-box;
+    font-family: 'Karla', sans-serif;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--lightgray);
+}
+h1,h2{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+}
+h1{
+    font-size: 3.5rem;
+}
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+    padding: 0 2rem;
+}
+.navbar .right .desktop ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.navbar .right .desktop ul li a{
+    text-decoration: none;
+    color: var(--darkgrayvio);
+    padding: 1rem 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.navbar .right .desktop ul li:nth-child(3){
+    padding-right: 1rem;
+}
+.navbar .right .desktop ul li:last-child{
+    border: 2px solid var(--verydarkvio);
+    padding: 0.6rem 0 0.6rem  0;
+}
+.navbar .right .desktop ul li:last-child a{
+    color: var(--verydarkvio);
+}
+
+/* mobile */
+#checkbox_id,.mobile-menu,.mobile{
+    display: none;
+}
+
+/* navbar */
+
+/* hero */
+.hero{
+    position: relative;
+    height: 850px;
+    overflow: hidden;
+}
+.hero-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+    background-color: var(--verydarkvio);
+    height: 500px;
+    overflow-y: visible;
+    padding-bottom: 200px;
+    margin-bottom: -200px;
+}
+#top-right-bg{
+    position: absolute;
+    right: -5%;
+    top: -25%;
+    height: 119%;
+}
+#bottom-left-bg{
+    position: absolute;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+}
+.hero-container .left{
+    padding:  3.5rem;
+
+    
+}
+.hero-container .left h1{
+    padding-top: 2rem;
+    width: 15ch;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+.hero-container .left p{
+    width: 55ch;
+    margin-top: 0;
+    color: var(--lightgray);
+    margin-bottom: 2rem;
+}
+
+
+.border-deco{
+    padding: 0 3.5rem;
+    width: 100px;
+    border-bottom: 2px solid var(--lightgray);
+}
+
+.hero .hero-container .right{
+    padding: 4.5rem 3.5rem;
+}
+
+/* hero */
+.details{
+    display: flex;
+    flex-direction: column;
+    margin-top: -70px;
+    padding: 0 7rem;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+.details h1{
+    color: var(--darkvio);
+}
+.details .border-deco-2{
+    padding:  0 3.5rem;
+    width: 100px;
+    border-bottom: 2px solid lightgray;
+}
+.grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+    grid-template-rows: auto;
+}
+
+/* banner */
+
+.banner{
+    height: 280px;
+    background-color: var(--verydarkvio);
+    padding: 2rem ;
+    margin: 3rem 7rem;
+    color: var(--lightgray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right ;
+    background-size: 50%;
+}
+.banner .left{
+    flex: 1;
+    padding: 0 1.5rem;
+}
+.banner .left h1{
+    width: 20ch;
+}
+.banner .right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+/* banner */
+
+/* footer */
+
+.footer{
+    padding: 1rem 7rem;
+    background-color: hsl(0, 54%, 97%);
+}
+.footer .header-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-media-icons ul {
+    list-style: none;
+    display: flex;
+
+  }
+  .sr-only {
+    display: none;
+  }
+  
+  .social-media-icons ul li {
+    padding: 0 0.4rem;
+  }
+  .social-media-icons ul li a {
+    color: var(--darkgrayvio);
+  }
+  .social-media-icons ul li a i {
+    transition: 300ms ease;
+  }
+
+  .fa-twitter-square:hover {
+    color: hsl(210, 82%, 64%);
+  }
+  .fa-facebook-square:hover {
+    color: hsl(210, 87%, 49%);
+  }
+  .fa-instagram:hover {
+    color: hsl(37, 97%, 70%);
+  }
+  .fa-pinterest-square:hover {
+    color: rgb(216, 76, 76);
+  }
+  .content-footer{
+      border-top: 1px solid gray;
+  }
+  .content-footer .grid{
+      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  }
+  .content-footer .grid ul {
+      list-style: none;
+      padding-left: 0;
+  }
+  .content-footer .grid ul li{
+      cursor: pointer;
+      padding: 0.3rem 0;
+      color: var(--verydarkvio);
+      font-weight: 700;
+  }
+  .content-footer .grid h4{
+      color: var(--darkgrayvio);
+      text-transform: uppercase;
+  }
+/* footer */
+
+
+/* utilities */
+.btn{
+    text-decoration: none;
+    color: var(--lightgray);
+    border: 1.5px solid var(--lightgray);
+    padding: 0.6rem 1.5rem;
+}
+.card{
+    width: 320px;
+
+}
+.card p{
+    color: hsl(273, 4%, 51%);
+    
+
+}
+
+/* voy a declarar un padding positivo y un margin negativo en el
+contenedor de abajo para que quede un poco por encima del contenedor */
