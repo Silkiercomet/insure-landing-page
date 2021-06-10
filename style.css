@@ -525,6 +525,14 @@ nav {
           background-size: 80%;
       }
   }
+  @media (max-width: 483px){
+    .banner{
+        background-size: 100%;
+    }
+    .hero {
+        background-size: 400px,400px;
+      }
+  }
 
   /* hero */
 }
