@@ -172,7 +172,7 @@ nav {
   background-image: url(images/bg-pattern-how-we-work-desktop.svg);
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 50%;
+  background-size: 60%;
 }
 .banner .left {
   flex: 1;
@@ -330,6 +330,20 @@ nav {
     place-items: center;
   }
 }
+@media (max-width:1000px){
+    
+    .banner {
+        background-size: 70%;
+      }
+
+      .banner .left h1 {
+        width: 15ch;
+      }
+
+      .banner .right .btn {
+        margin: 0 1rem;
+      }
+}
 @media (max-width: 923px) {
   .menu-d,
   .desktop {
@@ -348,6 +362,10 @@ nav {
   .hero {
     height: 1500px;
     background-color: var(--darkvio);
+    background-image: url(images/bg-pattern-intro-left-mobile.svg), url(images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left 60%, right 130%;
+    background-size: 200px,200px;
   }
   .hero-container {
     grid-template-columns: 1fr;
@@ -427,6 +445,9 @@ nav {
     width: auto;
     text-align: center;
   }
+  .banner .right  {
+    
+  }
 
   /* footer */
 
@@ -476,9 +497,9 @@ nav {
 
   /* footer */
 
-  @media (max-width: 623px) {
+  @media (max-width: 683px) {
     .hero {
-      height: 1100px;
+      height: 1200px;
       background-color: var(--darkvio);
     }
     .hero-container .left p,.hero-container .left h1 {
@@ -499,6 +520,9 @@ nav {
         background-repeat: no-repeat;
         background-position-y: 180%;
         background-size: contain;
+      }
+      .banner{
+          background-size: 80%;
       }
   }
 
