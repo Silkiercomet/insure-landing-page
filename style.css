@@ -527,11 +527,19 @@ nav {
   }
   @media (max-width: 483px){
     .banner{
-        background-size: 100%;
+        background-size: 130%;
+        
     }
     .hero {
         background-size: 400px,400px;
+        max-width:500px;
       }
+  }
+  @media (max-width: 403px){
+    .banner,.hero{
+        background-image: none;
+    }
+
   }
 
   /* hero */
