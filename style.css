@@ -535,7 +535,7 @@ nav {
         max-width:500px;
       }
   }
-  @media (max-width: 403px){
+  @media (max-width: 423px){
     .banner,.hero{
         background-image: none;
     }
